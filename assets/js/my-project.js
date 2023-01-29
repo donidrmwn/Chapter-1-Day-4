@@ -1,4 +1,4 @@
-document.getElementById('containerProject').innerHTML = ""
+//document.getElementById('containerProject').innerHTML = ""
 
 let projectLists = [];
 function getFileName()
