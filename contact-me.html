@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="left-side">
+                <img src="assets/images/logo.png" alt="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my-project.html">My Project</a></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <a  class="active" href="contact-me.html">Contact me</a>
+            </div>
+        </nav>
+
+        <div class="main-form-container">
+            <div class="form-container default-border">
+                <h1>Get In Touch</h1>
+                <form>
+                    <div>
+                        <label  for="name">Name</label>
+                        <input class="input-size" type="text" id="name">
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="input-size" type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input class="input-size" type="text" id="phone">
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject</label>
+                        <select class="input-size" id="subject">
+                            <option>Front-end</option>
+                            <option>Back-end</option>
+                            <option>Fullstack</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea class="input-size" id="message"></textarea>
+                    </div>
+
+                    <div class="main-button">
+                        <button type="button" onclick="sendEmail(event)">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

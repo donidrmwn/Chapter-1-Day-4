@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+textarea.input-size{
+    height: 150px;
+    
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.default-border{
+    box-shadow:0 20px 30px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+button{
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    padding: 5px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-size{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    height: 45px;
+    border-style: solid 1px #B6B2B2;
+    margin-top: 5px;
+}
+
+.input-half-size{
+    width: 50%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    height: 45px;
+}
+
+.main-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Styling nav */
+    nav{
+        background-color: #cdcdcd;
+        display: flex;
+        height: 7vh;
+        align-items: center;
+        padding: 0  5%;
+    }
+
+    nav div{
+        display: flex;
+        flex: 50%; 
+    }
+
+    nav .right-side{
+        justify-content: flex-end;  
+       
+    }
+    nav .right-side a{
+        background-color: black;
+        color: white;
+        padding: 4px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        
+    }
+  
+    nav .left-side{
+        align-items: center;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    nav .left-side ul li{
+        margin-left: 40px;
+        list-style-type: none;
+      
+        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav .left-side .active{
+        font-weight: bold;
+    }
+
+    nav img{
+        width: 7%;
+    }
+
+    
+/* Styling nav */
+
+/* Index HTML */
+
+.main-container{
+    padding:40px 10%;
+}
+
+
+.container{
+    display: flex;
+    
+    margin: auto;
+    padding:40px 200px 120px 200px;
+   
+    align-items: center;
+    flex: 50%;
+    justify-content: space-between;
+}
+
+
+.right-side .name{
+    margin:auto;
+    text-align:center;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow:0 10px 100px gray;
+    margin-top:-4px;
+    padding: 10px 0 10px 0;
+}
+
+.container .left-side{
+    width: 55%;
+    text-align: justify;
+}
+
+.container .right-side{
+    height: 400px;
+    width: 300px;
+   
+}
+.container .right-side img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.border-help{
+    border: 1px solid black;
+}
+
+.left-side .contact-content{
+    display: flex;
+    flex: 50%;
+    margin:30px 0;
+    
+}
+.contact-content .download-cv a{
+    display: flex;
+    flex:50%;
+    margin-left: 40px;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact-content .download-cv i{
+    margin-left: 10px;
+}
+
+
+.fa-instagram, .fa-facebook, .fa-twitter{
+    margin-left: 30px;
+    
+}
+.socmed-content i{
+    color: black;
+}
+
+/* Index HTML */
+
+
+/* Contact Me */
+.main-form-container{
+    padding-top:50px ;
+}
+.form-container{
+    width: 25%;
+   padding: 30px;
+    margin: auto;
+}
+
+.form-container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container label{
+    font-weight: bold;
+}
+
+
+
+textarea{
+    resize:none;
+    height: 100px;
+}
+
+
+/* Contact me */
+
+
+/* My Project */
+
+.container-project-form h1{
+    text-align: center;
+    
+}
+
+.container-project-form{
+    width: 50%;
+    margin: auto;
+}
+
+.main-container-project-form{
+    padding: 50px 90px;
+    background-color: #cdcdcd;
+}
+
+.project-date-container{
+    display: flex;
+}
+
+.start-date-container{
+    width: 50%;
+    margin-right: 5px;
+}
+.end-date-container{
+    width: 50%;
+    margin-left: 5px;
+}
+
+.technologies-container-list{
+    display: flex;
+    gap:25%;
+   margin-top: 15px;
+}
+
+
+.technologies-container{
+    list-style-type: none;   
+    margin-bottom: 20px;
+}
+
+.first-row-technology-list{
+    margin-bottom: 10px;
+}
+
+.project-image-label{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 0 10px 0 0;
+    border-style: solid 1px #B6B2B2;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.text-input-project-image{
+    width: 80%;
+    height: 100%;
+}
+
+.text-input-project-image{
+    border: none;
+}
+
+.label-choose-project-image{
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b2abab;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    border-style: solid 1px #B6B2B2;
+}
+
+.container-project{
+    padding: 50px;
+    text-align: center;
+}
+
+.container-project-lists{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+
+
+
+
+
+.project-card{
+    width: 350px;
+    height: 500px;
+    margin: 50px 20px 10px 20px;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.project-card img{
+    width: 320px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.project-card-description{
+    margin-top: 15px;
+    overflow-y: hidden;
+    height: 70px;
+    
+}
+
+.list-icon-tech{
+    margin-top: 20px;
+}
+
+.fa-brands{
+    margin-right: 10px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.button-group .button-edit, .button-group .button-delete{
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding: 5px 35px;
+    font-size: 15px;
+    width: 49%;
+}
+
+/* My Project */
+
+/* Project Detail */
+
+.main-project-detail-container{
+    padding: 35px 80px 35px 80px;
+}
+.project-detail-container h1{
+    margin-bottom: 40px;
+}
+.img-project-detail{
+    width: 1100px;
+    height: 400px;
+    margin-right: 70px;
+    
+}
+.data-project-detail{
+    width: 70%;
+
+}
+.img-project-detail img{
+   width: 100%;
+   height: 100%;
+}
+
+.head-project-detail{
+    display: flex;
+    flex: 50%;
+}
+
+.duration-project-detail{
+    margin-bottom: 50px;
+}
+.date-project-detail{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+.time-project-detail{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.list-technologies-project-detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 40%;
+    margin-top: 20px;
+ 
+}
+.group-list-technologies-project-detail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.body-project-detail{
+    text-align: justify;
+    margin-top: 50px;
+}
+/* Project Detail*/
