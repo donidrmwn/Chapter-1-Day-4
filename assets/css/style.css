@@ -337,21 +337,15 @@ textarea{
     border-radius: 5px;
 }
 
+
+
 .project-card-description{
     margin-top: 15px;
-    overflow-y: hidden;
+    overflow-y: auto;
     height: 70px;
     word-wrap: break-word;
     
 }
-
-.project-card-description-overflow{
-    margin-top: 15px;
-    overflow-y: scroll;
-    height: 70px;
-    word-wrap: break-word;    
-}
-
 .list-icon-tech{
     margin-top: 20px;
 }

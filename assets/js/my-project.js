@@ -58,32 +58,15 @@ function insertProject(){
 }
 
 function showData(){
-    document.getElementById('containerProject').innerHTML = "";
-    console.log(projectLists.length)
-    let lengthDescription;
-    let styleOverflow;
-
-   
-
-    console.log(styleOverflow)
+    document.getElementById('containerProject').innerHTML = "";    
     for(var i = 0; i <= projectLists.length - 1; i++){
-        lengthDescription = projectLists[i].description.length
-        console.log(lengthDescription)
-        
-        if(lengthDescription >= 84){
-            styleOverflow = 'project-card-description-overflow'
-        }
-        else{
-            styleOverflow = 'project-card-description'
-        }
-
-        console.log(styleOverflow)
+     
         document.getElementById('containerProject').innerHTML +=  
         `<div class="project-card default-border">
             <img src="${projectLists[i].image}" alt="">
                 <a style="text-decoration:none" href="detail-project.html"><h2>${projectLists[i].projectName}</h2></a>
                 <p>durasi: 3 bulan</p>
-            <div class="${styleOverflow}">
+            <div class="project-card-description">
                 <p>
                     ${projectLists[i].description}
                 </p>
