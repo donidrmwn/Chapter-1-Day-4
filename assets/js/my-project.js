@@ -42,6 +42,19 @@ function insertProject(){
         }
     }
 
+    if(projectName = ""){
+        alert("Project name masih kosong..!")
+    }else if(startDate = ""){
+        alert("Start Date masih kosong..!")
+    }else if(endDate = ""){
+        alert("End Date masih kosong..!")
+    }else if(description = ""){
+        alert("Description masih kosong..!")
+    }else if(tagListIcon = ""){
+        alert("Belum ada list icon yang di pilih...!")
+    }else if(image = ""){
+        alert("Image masih kosong..!")
+    }
   
     let objData = {
         projectName,
