@@ -65,7 +65,7 @@ function insertProject(){
     }else{
         image = URL.createObjectURL(projectImage[0]);
     }
-    }
+    
   
     let objData = {
         projectName,
