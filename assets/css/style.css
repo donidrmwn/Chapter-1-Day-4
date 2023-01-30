@@ -224,6 +224,10 @@ textarea{
 
 /* My Project */
 
+.main-container-project{
+    text-align: center;
+}
+
 .container-project-form h1{
     text-align: center;
     
@@ -303,7 +307,9 @@ textarea{
 
 .container-project{
     padding: 50px;
-    text-align: center;
+   width: 70%;
+   margin: auto;
+   text-align: left;
 }
 
 .container-project-lists{
@@ -334,6 +340,13 @@ textarea{
 .project-card-description{
     margin-top: 15px;
     overflow-y: hidden;
+    height: 70px;
+    
+}
+
+.project-card-description-overflow{
+    margin-top: 15px;
+    overflow-y: scroll;
     height: 70px;
     
 }
