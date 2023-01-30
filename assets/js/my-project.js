@@ -22,9 +22,6 @@ function insertProject(){
     let projectImage = document.getElementById("projectImage").files;
     let image;
    
-    if(projectImage[0] != undefined){
-        image = URL.createObjectURL(projectImage[0]);
-    }
     
     let tagListIcon = "";
 
@@ -63,9 +60,11 @@ function insertProject(){
     }else if(tagListIcon == ""){
         alert("Belum ada list icon yang di pilih...!")
         return
-    }else if(image == ""){
-        alert("Image masih kosong..!")
-        return
+    }else if(projectImage[0] == undefined){
+        alert("Belum ada gambar yang di pilih...!")
+    }else{
+        image = URL.createObjectURL(projectImage[0]);
+    }
     }
   
     let objData = {
