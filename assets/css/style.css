@@ -341,6 +341,7 @@ textarea{
     margin-top: 15px;
     overflow-y: hidden;
     height: 70px;
+    word-wrap: break-word;
     
 }
 
@@ -348,7 +349,7 @@ textarea{
     margin-top: 15px;
     overflow-y: scroll;
     height: 70px;
-    
+    word-wrap: break-word;    
 }
 
 .list-icon-tech{
