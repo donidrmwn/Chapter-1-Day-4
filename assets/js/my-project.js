@@ -20,7 +20,12 @@ function insertProject(){
     let vueJs = document.getElementById("vueJs").checked;
     let javaScript = document.getElementById("javaScript").checked;
     let projectImage = document.getElementById("projectImage").files;
-    let image = URL.createObjectURL(projectImage[0]);
+    let image;
+   
+    if(projectImage[0] != undefined){
+        image = URL.createObjectURL(projectImage[0]);
+    }
+    
     let tagListIcon = "";
 
     let listIcon = [
@@ -42,18 +47,25 @@ function insertProject(){
         }
     }
 
+    console.log(projectName)
     if(projectName == ""){
         alert("Project name masih kosong..!")
+        return
     }else if(startDate == ""){
         alert("Start Date masih kosong..!")
+        return
     }else if(endDate == ""){
         alert("End Date masih kosong..!")
+        return
     }else if(description == ""){
         alert("Description masih kosong..!")
+        return
     }else if(tagListIcon == ""){
         alert("Belum ada list icon yang di pilih...!")
+        return
     }else if(image == ""){
         alert("Image masih kosong..!")
+        return
     }
   
     let objData = {
