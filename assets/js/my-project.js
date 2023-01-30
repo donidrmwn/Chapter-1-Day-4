@@ -62,6 +62,7 @@ function insertProject(){
         return
     }else if(projectImage[0] == undefined){
         alert("Belum ada gambar yang di pilih...!")
+        return
     }else{
         image = URL.createObjectURL(projectImage[0]);
     }
