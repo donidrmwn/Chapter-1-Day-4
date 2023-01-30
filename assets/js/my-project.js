@@ -42,17 +42,17 @@ function insertProject(){
         }
     }
 
-    if(projectName = ""){
+    if(projectName == ""){
         alert("Project name masih kosong..!")
-    }else if(startDate = ""){
+    }else if(startDate == ""){
         alert("Start Date masih kosong..!")
-    }else if(endDate = ""){
+    }else if(endDate == ""){
         alert("End Date masih kosong..!")
-    }else if(description = ""){
+    }else if(description == ""){
         alert("Description masih kosong..!")
-    }else if(tagListIcon = ""){
+    }else if(tagListIcon == ""){
         alert("Belum ada list icon yang di pilih...!")
-    }else if(image = ""){
+    }else if(image == ""){
         alert("Image masih kosong..!")
     }
   
