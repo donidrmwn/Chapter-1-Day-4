@@ -73,14 +73,9 @@ function insertProject(){
             tagListIcon,
             image
         }
-    
         projectLists.push(objData);
         showData();
     }
-    
-  
-   
-   
 }
 
 function showData(){
