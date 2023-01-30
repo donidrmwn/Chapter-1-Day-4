@@ -43,7 +43,7 @@ function insertProject(){
             tagListIcon += "";
         }
     }
-
+    let objData ;
     console.log(projectName)
     if(projectName == ""){
         alert("Project name masih kosong..!")
@@ -65,20 +65,21 @@ function insertProject(){
         return
     }else{
         image = URL.createObjectURL(projectImage[0]);
+        objData = {
+            projectName,
+            startDate,
+            endDate,
+            description,
+            tagListIcon,
+            image
+        }
+    
+        projectLists.push(objData);
+        showData();
     }
     
   
-    let objData = {
-        projectName,
-        startDate,
-        endDate,
-        description,
-        tagListIcon,
-        image
-    }
-
-    projectLists.push(objData);
-    showData();
+   
    
 }
 
