@@ -4,6 +4,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body
+
 h1{
     text-align: center;
 }
@@ -25,8 +27,8 @@ label{
 }
 
 button{
-    background-color: black;
-    color:white;
+    background-color: #E5E0FF;
+    color:black;
     border-radius: 20px;
     padding: 5px 35px;
     font-size: 20px;
@@ -37,7 +39,7 @@ button{
 .input-size{
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     height: 45px;
     border-style: solid 1px #B6B2B2;
     margin-top: 5px;
@@ -57,9 +59,9 @@ button{
 
 /* Styling nav */
     nav{
-        background-color: #cdcdcd;
+        background-color: #7286D3;
         display: flex;
-        height: 7vh;
+        height: 10vh;
         align-items: center;
         padding: 0  5%;
     }
@@ -74,8 +76,8 @@ button{
        
     }
     nav .right-side a{
-        background-color: black;
-        color: white;
+        background-color: #E5E0FF;
+        color: black;
         padding: 4px 20px;
         text-decoration: none;
         border-radius: 5px;
@@ -94,12 +96,12 @@ button{
     nav .left-side ul li{
         margin-left: 40px;
         list-style-type: none;
-      
+        
         
     }
     a{
         text-decoration: none;
-        color: black;
+        color: #FFF2F2;
     }
 
     nav .left-side .active{
@@ -117,15 +119,17 @@ button{
 
 .main-container{
     padding:40px 10%;
+    background-color: #E5E0FF;
+    height: 100%;
 }
 
 
 .container{
     display: flex;
-    
+    background-color: #8EA7E9;
     margin: auto;
     padding:40px 200px 120px 200px;
-   
+   color: #03001C;
     align-items: center;
     flex: 50%;
     justify-content: space-between;
@@ -145,6 +149,7 @@ button{
 .container .left-side{
     width: 55%;
     text-align: justify;
+    
 }
 
 .container .right-side{
@@ -165,6 +170,8 @@ button{
     display: flex;
     flex: 50%;
     margin:30px 0;
+    align-items: center;
+    
     
 }
 .contact-content .download-cv a{
@@ -172,7 +179,7 @@ button{
     flex:50%;
     margin-left: 40px;
     align-items: center;
-    color: black;
+    color: #FFF2F2;
     text-decoration: none;
     cursor: pointer;
 }
@@ -186,7 +193,7 @@ button{
     
 }
 .socmed-content i{
-    color: black;
+    color: #FFF2F2;
 }
 
 /* Index HTML */
@@ -195,11 +202,14 @@ button{
 /* Contact Me */
 .main-form-container{
     padding-top:50px ;
+    background-color: #E5E0FF;
+    height: 100%;
 }
 .form-container{
     width: 25%;
    padding: 30px;
     margin: auto;
+    background-color: #8EA7E9;
 }
 
 .form-container h1{
@@ -224,9 +234,7 @@ textarea{
 
 /* My Project */
 
-.main-container-project{
-    text-align: center;
-}
+
 
 .container-project-form h1{
     text-align: center;
@@ -240,7 +248,7 @@ textarea{
 
 .main-container-project-form{
     padding: 50px 90px;
-    background-color: #cdcdcd;
+    background-color: #8EA7E9;
 }
 
 .project-date-container{
@@ -305,11 +313,13 @@ textarea{
     border-style: solid 1px #B6B2B2;
 }
 
+
 .container-project{
     padding: 50px;
-   width: 70%;
-   margin: auto;
-   text-align: left;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+   
 }
 
 .container-project-lists{
@@ -320,21 +330,29 @@ textarea{
 
 
 
-
-
 .project-card{
     width: 350px;
     height: 500px;
     margin: 50px 20px 10px 20px;
     padding: 10px;
     text-align: left;
-    
+    background-color: #7286D3;
+    color: #03001C;
 }
 
+.project-card h2{
+    color: #03001C;
+}
 .project-card img{
     width: 320px;
     height: 200px;
     border-radius: 5px;
+    
+}
+.project-card-img{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 
@@ -371,6 +389,10 @@ textarea{
 /* My Project */
 
 /* Project Detail */
+
+.main-container-project{
+    background-color: #E5E0FF;
+}
 
 .main-project-detail-container{
     padding: 35px 80px 35px 80px;

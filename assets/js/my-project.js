@@ -81,12 +81,15 @@ function insertProject(){
 function showData(){
     document.getElementById('containerProject').innerHTML = "";    
     for(var i = 0; i <= projectLists.length - 1; i++){
-     
+        //console.log(projectLists[i].startDate.getDate());
+   
         document.getElementById('containerProject').innerHTML +=  
         `<div class="project-card default-border">
-            <img src="${projectLists[i].image}" alt="">
+            <div class="project-card-img">
+                <img src="${projectLists[i].image}" alt="">
+            </div>
                 <a style="text-decoration:none" href="detail-project.html"><h2>${projectLists[i].projectName}</h2></a>
-                <p>durasi: 3 bulan</p>
+                <h3>Durasi: ${timeDistance(projectLists[i].startDate, projectLists[i].endDate)}</h3>
             <div class="project-card-description">
                 <p>
                     ${projectLists[i].description}
@@ -101,4 +104,31 @@ function showData(){
             </div>
         </div>`
     }
+}
+
+
+function timeDistance(startDate,endDate){
+    startDate = new Date(startDate)
+    endDate = new Date(endDate)
+    distance =  endDate - startDate;
+    let monthDistance = Math.floor(distance / (30*24*60*60*1000))
+    let weekDistance = Math.floor(distance / (7*24*60*60*1000))
+    let dayDistance = Math.floor(distance / (24*60*60*1000))
+    let hourDistance = Math.floor(distance / (60*60*1000))
+    let minuteDistance = Math.floor(distance / (60*1000))
+    
+    if(monthDistance > 0){
+        return `${monthDistance} bulan`
+    }else if(weekDistance > 0){
+        return `${weekDistance} minggu`
+    }else if(dayDistance > 0){
+        return `${dayDistance} hari`
+    }else if(hourDistance > 0){
+        return `${hourDistance} jam`
+    }else if(minuteDistance > 0){
+        return `${minuteDistance} menit`
+    }else{
+        return
+    }
+    
 }
