@@ -8,7 +8,7 @@ function getFileName()
     document.getElementById("textProjectImage").value = selectedFile;
 }
 
-function insertProject(){
+function insertProject() {
     event.preventDefault();
    
     let projectName = document.getElementById("projectName").value;
