@@ -43,7 +43,7 @@ function insertProject(){
             tagListIcon += "";
         }
     }
-    let objData ;
+    let objData;
     console.log(projectName)
     if(projectName == ""){
         alert("Project name masih kosong..!")
