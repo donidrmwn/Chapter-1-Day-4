@@ -19,134 +19,135 @@
         </nav>
 
         <!--Form submit Project-->
-        <div class="main-container-project-form">
-            <div class="container-project-form">
-                <h1>ADD MY PROJECT</h1>
-                <form >
+        <div class="main-container-project">
+            <div class="main-container-project-form">
+                <div class="container-project-form">
+                    <h1>ADD MY PROJECT</h1>
+                    <form >
 
-                    <!--Project Name-->
-                    <div>
-                        <label for="projectName">Project Name</label>
-                        <input class="input-size" type="text" id="projectName">
-                    </div>
-
-                    <!--Project date-->
-                    <div class="project-date-container">
-                        <div class="start-date-container">
-                            <label for="startDate">Start Date</label>
-                            <input class="input-size" type="date" id="startDate">
-                        </div>
-
-                        <div class="end-date-container">
-                            <label for="endDate">End Date</label>
-                            <input class="input-size"  type="date" id="endDate">
-                        </div>
-                    </div>
-
-                    <!-- Description -->
-                    <div>
-                        <label for="description">Description</label>
-                        <textarea id="description" class="input-size"></textarea>
-                    </div>
-
-                    <!-- Technologies -->
-                    <div class="technologies-container">
-                    <label>Technologies</label>
-                        <div class="technologies-container-list">
-                                <div class="left-side-technologies">
-                                    <div class="first-row-technology-list">
-                                        <input type="checkbox" id="nodeJs">
-                                        <label for="nodeJs">Node JS</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="reactJs">
-                                        <label for="reactJs">React JS</label>
-                                    </div>
-                                </div>
-                            
-                                <div class="right-side-technologies">
-                                    <div class="first-row-technology-list">
-                                        <input type="checkbox" id="vueJs">
-                                        <label for="vueJs">Vue JS</label>
-                                    </div>   
-                                    <div>
-                                        <input type="checkbox" id="javaScript">
-                                        <label for="javaScript">Javascript</label>
-                                    </div> 
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!--Project Image-->
-                    <div>
-                        <label >Upload Image</label>
+                        <!--Project Name-->
                         <div>
-                            <div class="project-image-label">
-                                <div class="label-choose-project-image">
-                                    <label for="projectImage">Choose</label>
-                                </div>
-                                <input class="text-input-project-image" id="textProjectImage" type="text" disabled>
-                                <label for="projectImage">   
-                                    <img src="assets/images/file.png" alt="">                               
-                                </label>
+                            <label for="projectName">Project Name</label>
+                            <input class="input-size" type="text" id="projectName">
+                        </div>
+
+                        <!--Project date-->
+                        <div class="project-date-container">
+                            <div class="start-date-container">
+                                <label for="startDate">Start Date</label>
+                                <input class="input-size" type="date" id="startDate">
                             </div>
-                            <input type="file" id="projectImage" onchange="getFileName()" hidden>
+
+                            <div class="end-date-container">
+                                <label for="endDate">End Date</label>
+                                <input class="input-size"  type="date" id="endDate">
+                            </div>
+                        </div>
+
+                        <!-- Description -->
+                        <div>
+                            <label for="description">Description</label>
+                            <textarea id="description" class="input-size"></textarea>
+                        </div>
+
+                        <!-- Technologies -->
+                        <div class="technologies-container">
+                        <label>Technologies</label>
+                            <div class="technologies-container-list">
+                                    <div class="left-side-technologies">
+                                        <div class="first-row-technology-list">
+                                            <input type="checkbox" id="nodeJs">
+                                            <label for="nodeJs">Node JS</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="reactJs">
+                                            <label for="reactJs">React JS</label>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="right-side-technologies">
+                                        <div class="first-row-technology-list">
+                                            <input type="checkbox" id="vueJs">
+                                            <label for="vueJs">Vue JS</label>
+                                        </div>   
+                                        <div>
+                                            <input type="checkbox" id="javaScript">
+                                            <label for="javaScript">Javascript</label>
+                                        </div> 
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--Project Image-->
+                        <div>
+                            <label >Upload Image</label>
+                            <div>
+                                <div class="project-image-label">
+                                    <div class="label-choose-project-image">
+                                        <label for="projectImage">Choose</label>
+                                    </div>
+                                    <input class="text-input-project-image" id="textProjectImage" type="text" disabled>
+                                    <label for="projectImage">   
+                                        <img src="assets/images/file.png" alt="">                               
+                                    </label>
+                                </div>
+                                <input type="file" id="projectImage" onchange="getFileName()" hidden>
+                            </div>
+                        </div>
+
+                        <!--Button submit-->
+                        <div class="main-button">
+                            <button type="submit" onclick="insertProject(event)">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Form submit Project-->
+            <!--max 84 karakter-->
+            <div class="container-project">
+                <h1>MY PROJECT</h1>
+                <div class="container-project-lists" id="containerProject">
+                    <div class="project-card default-border">
+                        <img src="assets/images-sample/1.jpg" alt="">
+                        <a style="text-decoration:none" href="detail-project.html"><h2>Project 1</h2></a>
+                            <p>durasi: 3 bulan</p>
+                        <div class="project-card-description">
+                            <p>App that used for dumbways student, it was deployed and can downloaded on playstore.
+                                Happy download Lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                        <div class="list-icon-tech">
+                            <i class="fa-brands fa-node-js fa-2xl"></i>
+                            <i class="fa-brands fa-react fa-2xl"></i>
+                            <i class="fa-brands fa-vuejs fa-2xl"></i>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-edit">edit</button>
+                            <button class="button-delete">delete</button>
                         </div>
                     </div>
-
-                    <!--Button submit-->
-                    <div class="main-button">
-                        <button type="submit" onclick="insertProject(event)">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <!--Form submit Project-->
-        <!--max 84 karakter-->
-        <div class="container-project">
-            <h1>MY PROJECT</h1>
-            <div class="container-project-lists" id="containerProject">
-                <div class="project-card default-border">
-                    <img src="assets/images-sample/1.jpg" alt="">
-                    <a style="text-decoration:none" href="detail-project.html"><h2>Project 1</h2></a>
+                    <div class="project-card default-border">
+                        <img src="assets/images-sample/2.jpg" alt="">
+                        <a style="text-decoration:none" href="detail-project.html"><h2>Project 2</h2></a>
                         <p>durasi: 3 bulan</p>
-                    <div class="project-card-description">
-                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore.
-                            Happy download Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                    <div class="list-icon-tech">
-                        <i class="fa-brands fa-node-js fa-2xl"></i>
-                        <i class="fa-brands fa-react fa-2xl"></i>
-                        <i class="fa-brands fa-vuejs fa-2xl"></i>
-                    </div>
-                    <div class="button-group">
-                        <button class="button-edit">edit</button>
-                        <button class="button-delete">delete</button>
-                    </div>
-                </div>
-                <div class="project-card default-border">
-                    <img src="assets/images-sample/2.jpg" alt="">
-                    <a style="text-decoration:none" href="detail-project.html"><h2>Project 2</h2></a>
-                    <p>durasi: 3 bulan</p>
-                    <div class="project-card-description">
-                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore.
-                            Happy download Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div class="list-icon-tech">
-                        <i class="fa-brands fa-node-js fa-2xl"></i>
-                        <i class="fa-brands fa-react fa-2xl"></i>
-                        <i class="fa-brands fa-vuejs fa-2xl"></i>
-                    </div>
-                    <div class="button-group">
-                        <button class="button-edit">edit</button>
-                        <button class="button-delete">delete</button>
+                        <div class="project-card-description">
+                            <p>App that used for dumbways student, it was deployed and can downloaded on playstore.
+                                Happy download Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="list-icon-tech">
+                            <i class="fa-brands fa-node-js fa-2xl"></i>
+                            <i class="fa-brands fa-react fa-2xl"></i>
+                            <i class="fa-brands fa-vuejs fa-2xl"></i>
+                        </div>
+                        <div class="button-group">
+                            <button class="button-edit">edit</button>
+                            <button class="button-delete">delete</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <script src="assets/js/my-project.js"></script>
     </body>
 </html>
